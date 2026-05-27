@@ -56,7 +56,7 @@
 
 ; aliases
 ((unquoted_item) @string.special.symbol
-  (#match? @string.special.symbol "@.+"))
+  (#match? @string.special.symbol "\\@.+"))
 
 ; variables
 ((unquoted_item) @variable
