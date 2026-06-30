@@ -24,7 +24,7 @@ module.exports = grammar({
   rules: {
     kanata: $ => repeat($.list),
 
-    line_comment: _ => seq(';;', /[^\n]*/),
+    line_comment: _ => token(/;;.*/),
 
     block_comment: _ => seq('#|', /[^|]*\|+([^|#][^|]*\|+)*/, '#'),
 

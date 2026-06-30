@@ -104,11 +104,22 @@ Line comments
   item
 )
 
+;;no-space
+
+(
+  ;;TODO: no space
+  item
+)
+
 -----
 
 (kanata
   (line_comment)
   (list)
+  (list
+    (line_comment)
+    (unquoted_item))
+  (line_comment)
   (list
     (line_comment)
     (unquoted_item)))
